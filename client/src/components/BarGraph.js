@@ -1,6 +1,4 @@
-
 import React from 'react';
-
 import { Bar } from 'react-chartjs-2';
 
 export function BarGraph({male, female}) {
@@ -19,6 +17,11 @@ export function BarGraph({male, female}) {
       scaleLabel: {
         display: true,
         labelString: 'Proportion of Poverty'
+      },
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 100
       }
     }],
     xAxes: [{
@@ -30,7 +33,7 @@ export function BarGraph({male, female}) {
   }
 };
 
-const labels = ['Severity Ratio', 'Poverty Gap Ratio', 'Head Count Ration'];
+const labels = ['Severity Ratio', 'Poverty Gap Ratio', 'Head Count Ratio'];
 
 const data = {
   labels,
@@ -38,12 +41,12 @@ const data = {
     {
       label: 'MALE',
       data: male,
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      backgroundColor: 'rgba(199, 212, 128, 1)',
     },
     {
       label: 'FEMALE',
       data: female,
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      backgroundColor: 'rgba(170, 181, 219, 1)',
     },
   ],
 };

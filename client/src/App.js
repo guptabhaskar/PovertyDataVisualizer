@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'
-import {BarGraph} from './BarGraph'
+import {BarGraph} from './components/BarGraph'
 import MenuItem from '@material-ui/core/MenuItem'
 import FormHelperText from '@material-ui/core/FormHelperText'
 import InputLabel from '@material-ui/core/InputLabel'
@@ -19,11 +19,8 @@ function App() {
       var type = 'male';
       data = data.data;
       data.map((d)=>{
-        let arr = [];
+        let arr = [d['sevpov']*100, d['povgap']*100, d['hc']*100];
         type = (d['gender']==='female'?'female':'male');
-        arr.push(d['sevpov']*100)
-        arr.push(d['povgap']*100)
-        arr.push(d['hc']*100)
         type==='male'?setMale(arr):setFemale(arr);
       })
     })

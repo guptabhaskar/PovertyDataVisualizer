@@ -32,13 +32,19 @@ Here is what you need to run this web-app:
    ```sh
    git clone https://github.com/guptabhaskar/PovertyDataVisualizer.git
    ```
+   
+1. Go to the folder
+
+   ```sh
+   cd PovertyDataVisualizer
+   ```
 
 1. To start the server, follow these commands in a terminal:
 
    ```sh
    cd server
    npm i
-   node app.js
+   node index.js
    ```
 
 1. To start the client, follow these commands in a new terminal:

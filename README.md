@@ -57,6 +57,16 @@ Here is what you need to run this web-app:
    
 Visit http://localhost:3000 and to test the app!🥳
 
+### Original
+<div align='center'>
+<img style="border:1px black solid;" src="https://github.com/guptabhaskar/PovertyDataVisualizer/blob/main/poverty-by-gender.png">
+</div>
+
+### Replica
+<div align='center'>
+<img style="border:1px black solid;" src="https://github.com/guptabhaskar/PovertyDataVisualizer/blob/main/poverty-by-gender-replica.png">
+</div>
+
 ## Contact
 
 Bhaskar Gupta - bhaskar19237@iiitd.ac.in
